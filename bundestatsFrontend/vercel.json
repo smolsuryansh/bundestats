@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+      {
+        "source": "/standings",
+        "destination": "https://bundestats-latest.onrender.com/standings"
+      },
+      {
+        "source": "/team/:id",
+        "destination": "https://bundestats-latest.onrender.com/team/:id"
+      }
+    ]
+  }
