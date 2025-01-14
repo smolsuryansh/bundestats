@@ -21,7 +21,7 @@ const Standings = () => {
         try {
             setLoading(true);
 
-            const params = { season };
+            const params = season ? { season } : {};
 
             const response = await axios.get('https://bundestats-latest.onrender.com/standings', { params });
             const data = response.data;

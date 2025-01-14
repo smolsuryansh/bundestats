@@ -15,7 +15,7 @@ const Scorers = () => {
     const fetchScoreres = async () => {
         try {
             setLoading(true);
-            const params = { season };
+            const params = season ? { season } : {};
 
             const response = await axios.get(`https://bundestats-latest.onrender.com/scorers`, { params });
             const data = response.data;
