@@ -17,7 +17,7 @@ public class CorsConfiguration {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedMethods("GET", "PUT", "POST", "DELETE")
-                        .allowedOrigins("http://localhost:5173/");
+                        .allowedOrigins("https://bundestats.vercel.app/");
             }
         };
     }
