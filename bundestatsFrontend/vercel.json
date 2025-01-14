@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      { "source": "/standings", "destination": "/" },
+      { "source": "/team/:id", "destination": "/" },
+      { "source": "/matches", "destination": "/" },
+      { "source": "/scorers", "destination": "/" }
+    ]
+  }
