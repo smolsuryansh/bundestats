@@ -7,6 +7,10 @@
       {
         "source": "/team/:id",
         "destination": "https://bundestats-latest.onrender.com/team/:id"
+      },
+      {
+        "source": "/scorers",
+        "destination": "https://bundestats.vercel.app/scorers"
       }
     ]
   }
