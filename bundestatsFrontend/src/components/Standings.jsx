@@ -23,7 +23,7 @@ const Standings = () => {
 
             const params = { season };
 
-            const response = await axios.get('http://localhost:8080/standings', { params });
+            const response = await axios.get('https://bundestats-latest.onrender.com/standings', { params });
             const data = response.data;
             if (data && data.standings && data.standings[0]?.table) {
                 setStandingsTable(data.standings[0].table);

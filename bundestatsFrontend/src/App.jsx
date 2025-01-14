@@ -30,7 +30,7 @@ function App() {
     const fetchTeams = async() => {
       try {
         setLoading(true);
-        const response = await axios.get('http://localhost:8080/teams');
+        const response = await axios.get('https://bundestats-latest.onrender.com/teams');
         setTeams(response.data.teams);
         setFilteredTeams(response.data.teams);
       } catch (error) {

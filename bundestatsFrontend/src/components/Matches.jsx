@@ -19,7 +19,7 @@ const Matches = ({ searchTerm }) => {
     try {
       const params = season === 2024 ? { status } : { season, status };
 
-      const response = await axios.get(`http://localhost:8080/matches`, { params });
+      const response = await axios.get(`https://bundestats-latest.onrender.com/matches`, { params });
       let fetchedMatches = response.data.matches || [];
 
       // Sort scheduled matches

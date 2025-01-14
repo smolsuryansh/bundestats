@@ -30,7 +30,7 @@ const TeamDetails = ({ teams = [] }) => {
     useEffect(() => {
         const fetchStandings = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/standings');
+                const response = await axios.get('https://bundestats-latest.onrender.com/standings');
                 const data = response.data;
                 if (data && data.standings && data.standings[0]?.table) {
                     setStandingsTable(data.standings[0].table);

@@ -17,7 +17,7 @@ const Scorers = () => {
             setLoading(true);
             const params = { season };
 
-            const response = await axios.get(`http://localhost:8080/scorers`, { params });
+            const response = await axios.get(`https://bundestats-latest.onrender.com/scorers`, { params });
             const data = response.data;
 
             setTopScorers(data.scorers || []);
