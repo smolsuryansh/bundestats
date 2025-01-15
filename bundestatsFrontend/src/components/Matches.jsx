@@ -121,9 +121,9 @@ const Matches = ({ searchTerm }) => {
         </h2>
 
         {loading ? (
-          <div className="flex justify-center items-center h-64">
+          <div className="flex flex-row justify-center items-center h-64">
             <ClipLoader color="#ffffff" size={50} />
-            <p>This process may take upto 2 minutes</p>
+            <p className='text-white text-center text-xl'>This process may take upto 2 minutes when loading for the first time.</p>
           </div>
         ) : (
           <>
