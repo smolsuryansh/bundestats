@@ -123,6 +123,7 @@ const Matches = ({ searchTerm }) => {
         {loading ? (
           <div className="flex justify-center items-center h-64">
             <ClipLoader color="#ffffff" size={50} />
+            <p>This process may take upto 2 minutes</p>
           </div>
         ) : (
           <>

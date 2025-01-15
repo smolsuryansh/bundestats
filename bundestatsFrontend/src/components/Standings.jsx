@@ -132,6 +132,7 @@ const Standings = () => {
                                 <tr>
                                     <td colSpan="4" className="text-center p-4">
                                         <ClipLoader color="#ffffff" size={50} />
+                                        <p>This process may take upto 2 minutes</p>
                                     </td>
                                 </tr>
                             ) : (

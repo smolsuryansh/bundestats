@@ -27,6 +27,7 @@ const Teams = ({ filteredTeams, loading }) => {
             {loading ? (
                 <div className='flex justify-center items-center h-64'>
                     <ClipLoader color='#ffffff' size={50} />
+                    <p>This process may take upto 2 minutes</p>
                 </div>
             ) : (
                 <div className='py-[2vw] px-[7vw] grid sm:grid-cols-3 gap-10 grid-cols-2'>
