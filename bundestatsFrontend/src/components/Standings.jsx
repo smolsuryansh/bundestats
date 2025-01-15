@@ -123,8 +123,13 @@ const Standings = () => {
                                 <tr className="bg-[#dd6e68]">
                                     <th className="border border-white p-2 sm:text-lg text-sm">Position</th>
                                     <th className="border border-white p-2 sm:text-lg text-sm">Team</th>
+                                    <th className="border border-white p-2 sm:text-lg text-sm">Matches Played</th>
+                                    <th className="border border-white p-2 sm:text-lg text-sm">Wins</th>
+                                    <th className="border border-white p-2 sm:text-lg text-sm">Draw</th>
+                                    <th className="border border-white p-2 sm:text-lg text-sm">Lost</th>
                                     <th className="border border-white p-2 sm:text-lg text-sm">Points</th>
                                     <th className="border border-white p-2 sm:text-lg text-sm">GF - GA</th>
+                                    <th className="border border-white p-2 sm:text-lg text-sm">GD</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -152,8 +157,13 @@ const Standings = () => {
                                                     />
                                                     {entry.team.shortName}
                                                 </td>
+                                                <th className="border border-white p-2 sm:text-lg text-sm text-center">{entry.playedGames}</th>
+                                                <th className="border border-white p-2 sm:text-lg text-sm text-center">{entry.won}</th>
+                                                <th className="border border-white p-2 sm:text-lg text-sm text-center">{entry.draw}</th>
+                                                <th className="border border-white p-2 sm:text-lg text-sm text-center">{entry.lost}</th>
                                                 <th className="border border-white p-2 sm:text-lg text-sm text-center">{entry.points}</th>
                                                 <th className="border border-white p-2 sm:text-lg text-sm text-center">{entry.goalsFor} - {entry.goalsAgainst}</th>
+                                                <th className="border border-white p-2 sm:text-lg text-sm text-center">{entry.goalDifference}</th>
                                             </tr>
                                         ))
                                     ) : (
