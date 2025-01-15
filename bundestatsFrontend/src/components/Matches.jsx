@@ -121,10 +121,10 @@ const Matches = ({ searchTerm }) => {
         </h2>
 
         {loading ? (
-          <div className="flex justify-center items-center text-center h-64">
+          <div className="flex flex-col justify-center items-center text-center h-64">
             <ClipLoader color="#ffffff" size={50} />
             <div>
-              <p className='text-white text-center text-xl'>This process may take upto 2 minutes when loading for the first time.</p>
+              <p className='text-white text-center sm:text-xl text-lg'>This process may take upto 2 minutes when loading for the first time.</p>
             </div>
           </div>
         ) : (
@@ -182,22 +182,6 @@ const Matches = ({ searchTerm }) => {
             )}
           </>
         )}
-
-        {/* {totalPages > 1 && !loading && (
-          <div className="flex justify-center mt-4">
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-              <button
-                key={page}
-                onClick={() => setCurrentPage(page)}
-                className={`md:px-3 md:py-1 md:mx-1 px-2 py-[0.5] mx-1 rounded-lg font-bold ${
-                  currentPage === page ? 'bg-blue-500 text-white' : 'bg-gray-300 text-black'
-                }`}
-              >
-                {page}
-              </button>
-            ))}
-          </div>
-        )} */}
 
         {totalPages > 1 && !loading && (
           <div className="flex justify-center mt-4">
