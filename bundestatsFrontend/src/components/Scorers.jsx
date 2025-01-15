@@ -110,7 +110,7 @@ const Scorers = () => {
                             <div className="overflow-x-auto">
                                 <table className="w-full min-w-[768px] lg:min-w-[1024px] table-auto border-collapse text-white text-sm lg:text-lg">
                                     <thead>
-                                        <tr className="bg-[#c07171]">
+                                        <tr className="bg-[#dd6e68]">
                                             <th className="border px-2 lg:px-4 py-2">Position</th>
                                             <th className="border px-2 lg:px-4 py-2">Name</th>
                                             <th className="border py-2">Matches</th>
@@ -136,7 +136,7 @@ const Scorers = () => {
                                                     </span>
                                                 </td>
                                                 <td className="border py-2 text-center">{scorer.playedMatches}</td>
-                                                <th className="border px-2 lg:px-4 py-2 text-[#c07171] text-center">
+                                                <th className="border px-2 lg:px-4 py-2 text-[#dd6e68] text-center">
                                                     {scorer.goals}
                                                 </th>
                                                 <th className="border px-2 lg:px-4 py-2 text-[#85c1ca] text-center">

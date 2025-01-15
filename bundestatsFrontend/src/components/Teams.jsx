@@ -16,7 +16,7 @@ const Teams = ({ filteredTeams, loading }) => {
         <div className='w-full h-full bg-[#303333]'>
 
             <div className='w-full text-white pt-[2vw] flex flex-col items-center justify-center'>
-                <h1 className='lg:text-6xl sm:text-5xl text-3xl font-bold'>
+                <h1 className='lg:text-6xl sm:text-5xl text-3xl font-bold text-center'>
                     Welcome to Bundestats!
                 </h1>
                 <p className='mt-[1vw] sm:text-lg text-[3vw] font-semibold'>
@@ -35,7 +35,7 @@ const Teams = ({ filteredTeams, loading }) => {
                         filteredTeams.map((team) => (
                             <div
                                 key={team.id}
-                                className='flex flex-col items-center justify-center cursor-pointer hover:scale-105 transition-transform bg-white hover:bg-[#c07171] hover:duration-[600ms] hover:ease-in-out rounded-3xl lg:border-[0.3vw] sm:border-[0.5vw] border-[0.8vw] border-[#c07171] py-[3vw] text-[#303333] hover:text-white'
+                                className='flex flex-col items-center justify-center cursor-pointer hover:scale-105 transition-transform bg-white hover:bg-[#dd6e68] hover:duration-[600ms] hover:ease-in-out rounded-3xl lg:border-[0.3vw] sm:border-[0.5vw] border-[0.8vw] border-[#dd6e68] py-[3vw] text-[#303333] hover:text-white'
                                 onClick={() => handleTeamClick(team)}
                             >
                                 <img
@@ -47,7 +47,7 @@ const Teams = ({ filteredTeams, loading }) => {
                             </div>
                         ))
                     ) : (
-                        <p className='text-white'>Something went wrong :(</p>
+                        <p className='text-red-600'>Something went wrong :(</p>
                     )}
                 </div>
             )}

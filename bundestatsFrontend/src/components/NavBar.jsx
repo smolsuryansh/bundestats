@@ -48,7 +48,7 @@ const NavBar = ({ onSearch, searchTerm }) => {
                     value={searchTerm}
                     onChange={handleSearch}
                     disabled={disableSearch}
-                    className="bg-gray-800 text-white pl-[2vw] py-1 focus:outline-none disabled:cursor-not-allowed rounded-l-xl"
+                    className="bg-gray-800 text-white sm:pl-[2vw] pl-[13vw] py-1 focus:outline-none disabled:cursor-not-allowed rounded-l-xl"
                 />
                 <button
                     onClick={() => console.log("Searching for: ", searchTerm)}

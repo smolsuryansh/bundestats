@@ -115,7 +115,7 @@ const Matches = ({ searchTerm }) => {
       <div className="bg-[#333333] border border-white p-4 rounded-xl">
         <h2 className="text-4xl lg:text-7xl font-bold mb-4 text-white text-center">
           Matches{' '}
-          <span className={`${status === 'FINISHED' ? 'text-[#c07171]' : 'text-blue-300'}`}>
+          <span className={`${status === 'FINISHED' ? 'text-[#dd6e68]' : 'text-blue-300'}`}>
             ({status})
           </span>
         </h2>
@@ -133,7 +133,7 @@ const Matches = ({ searchTerm }) => {
               <div className="overflow-x-auto">
                 <table className="w-full table-auto border-collapse text-white text-base lg:text-2xl">
                   <thead>
-                    <tr className="bg-[#c07171]">
+                    <tr className="bg-[#dd6e68]">
                       <th className="border px-2 py-2">Date</th>
                       <th className="border px-2 py-2">Home Team</th>
                       <th className="border px-2 py-2 bg-[#85c1ca] text-[#333333]">Score</th>
@@ -177,7 +177,7 @@ const Matches = ({ searchTerm }) => {
               </div>
             ) : (
               <p className="text-red-500 text-lg lg:text-3xl font-semibold">
-                No matches found, make sure the spelling is correct.
+                No matches found, make sure the spelling is correct and the matches are set to FINISHED when viewing matches for earlier seasons.
               </p>
             )}
           </>
