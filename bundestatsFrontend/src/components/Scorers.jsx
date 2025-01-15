@@ -100,7 +100,9 @@ const Scorers = () => {
                 {loading ? (
                     <div className="flex justify-center items-center text-center h-64">
                         <ClipLoader color="#ffffff" size={50} />
-                        <p className='text-white text-center text-xl'>This process may take upto 2 minutes when loading for the first time.</p>
+                        <div>
+                            <p className='text-white text-center text-xl'>This process may take upto 2 minutes when loading for the first time.</p>
+                        </div>
                     </div>
                 ) : (
                     <>
