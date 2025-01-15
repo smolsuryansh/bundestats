@@ -51,7 +51,7 @@ const TeamDetails = ({ teams = [] }) => {
         <div className='w-full h-full bg-[#303333] sm:p-10 p-5 text-white'>
             <div className='text-white'>
 
-                <div className='bg-[#c07171] grid-cols-2 gap-2 border-[0.2vw] border-white px-[0.7vw] py-[0.7vw] rounded-xl flex items-center justify-between'>
+                <div className='bg-[#dd6e68] grid-cols-2 gap-2 border-[0.2vw] border-white px-[0.7vw] py-[0.7vw] rounded-xl flex items-center justify-between'>
                     <div>
                         <h2 className='lg:text-7xl md:text-5xl sm:text-4xl text-3xl font-bold'>{team.name} ({team.tla})</h2>
 
@@ -65,12 +65,12 @@ const TeamDetails = ({ teams = [] }) => {
 
                     </div>
 
-                    <div className='flex flex-col items-center bg-[#c07171] border-[0.2vw] border-white rounded-xl sm:p-[1.5vw] p-[0.5vw]'>
+                    <div className='flex flex-col items-center bg-[#dd6e68] border-[0.2vw] border-white rounded-xl sm:p-[1.5vw] p-[0.5vw]'>
                         <h2 className='lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold mb-[1vw] text-center'>
                             Position in Bundesliga
                         </h2>
                         {teamStandings ? (
-                            <div className='flex items-center justify-center bg-[#c07171] text-[#303333] rounded-xl border-2 border-white w-[8vw] h-[8vw] sm:w-[10vw] sm:h-[10vw] md:w-[15vw] md:h-[15vw] lg:w-[20vw] lg:h-[20vw]'>
+                            <div className='flex items-center justify-center bg-[#dd6e68] text-[#303333] rounded-xl border-2 border-white w-[8vw] h-[8vw] sm:w-[10vw] sm:h-[10vw] md:w-[15vw] md:h-[15vw] lg:w-[20vw] lg:h-[20vw]'>
                                 <span className='lg:text-[8vw] md:text-[6vw] sm:text-[5vw] text-[4vw] font-bold'>
                                     {teamStandings.position}
                                 </span>
@@ -84,7 +84,7 @@ const TeamDetails = ({ teams = [] }) => {
 
                 </div>
 
-                <div className='mt-[1vw] bg-[#c07171] border-[0.2vw] border-white rounded-xl'>
+                <div className='mt-[1vw] bg-[#dd6e68] border-[0.2vw] border-white rounded-xl'>
                     <h3 className='md:text-2xl text-xl font-semibold px-[0.5vw] py-[0.3vw]'>
                         Running competitions:
                     </h3>
@@ -95,11 +95,11 @@ const TeamDetails = ({ teams = [] }) => {
                     </p>
                 </div>
 
-                <div className='lg:text-7xl md:text-5xl sm:text-3xl text-2xl text-white my-[1.4vw] border-[0.15vw] border-white rounded-xl bg-[#c07171] w-fit px-[0.4vw] py-[0.6vw] font-semibold'>
+                <div className='lg:text-7xl md:text-5xl sm:text-3xl text-2xl text-white my-[1.4vw] border-[0.15vw] border-white rounded-xl bg-[#dd6e68] w-fit px-[0.4vw] py-[0.6vw] font-semibold'>
                     <h1>{team.shortName}'s SQUAD:</h1>
                 </div>
 
-                <div className='bg-[#c07171] hover:bg-[#85c1ca] duration-[600ms] ease-in-out border-[0.15vw] border-white my-[1vw] rounded-xl px-[0.7vw] py-[0.7vw] w-fit mb-[1.4vw]'>
+                <div className='bg-[#dd6e68] hover:bg-[#85c1ca] duration-[600ms] ease-in-out border-[0.15vw] border-white my-[1vw] rounded-xl px-[0.7vw] py-[0.7vw] w-fit mb-[1.4vw]'>
                     <h3 className='lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold'>
                         Coach: <a href={`https://google.com/search?q=${team.coach.name}`} target='_blank'>{team.coach.name}</a>
                     </h3>
@@ -108,7 +108,7 @@ const TeamDetails = ({ teams = [] }) => {
                 <div className='overflow-x-auto'>
                     <table className='w-full text-white border-collapse border border-white'>
                         <thead>
-                            <tr className='bg-[#c07171]'>
+                            <tr className='bg-[#dd6e68]'>
                                 <th className='border border-white px-4 py-2 lg:text-2xl md:text-xl sm:text-base text-sm'>Name</th>
                                 <th className='border border-white px-4 py-2 lg:text-2xl md:text-xl sm:text-base text-sm'>Position</th>
                                 <th className='border border-white px-4 py-2 lg:text-2xl md:text-xl sm:text-base text-sm'>Nationality</th>
