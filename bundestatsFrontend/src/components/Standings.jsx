@@ -144,7 +144,7 @@ const Standings = () => {
                                                 onClick={() => handleTeamClick(entry)}
                                             >
                                                 <th className="border border-white p-2 sm:text-lg text-sm text-center">{entry.position}</th>
-                                                <td className="border border-white p-2 sm:text-lg text-sm font-semibold">
+                                                <td className="border border-white p-2 md:flex sm:text-lg text-sm font-semibold">
                                                     <img
                                                         src={entry.team.crest || '/default-crest.png'}
                                                         alt={entry.team.name}
