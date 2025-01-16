@@ -140,6 +140,7 @@ const Matches = ({ searchTerm }) => {
                       <th className="border px-2 py-2">Away Team</th>
                       <th className="border px-2 py-2 bg-[#83dc73] text-[#333333]">Result</th>
                       <th className="border px-2 py-2">Referee</th>
+                      <th className="border px-2 py-2">Match Details</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -169,6 +170,9 @@ const Matches = ({ searchTerm }) => {
                           >
                             {match.referees && match.referees.length > 0 ? match.referees[0].name : 'Not Available'}
                           </a>
+                        </th>
+                        <th className='border px-2 py-2'>
+                          <a href={`https://google.com/search?q=${match.homeTeam.name}vs${match.awayTeam.name}${new Date(match.utcDate).toISOString().split('T')[0]}`}></a>
                         </th>
                       </tr>
                     ))}
