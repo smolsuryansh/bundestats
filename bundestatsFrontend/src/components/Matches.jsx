@@ -172,7 +172,7 @@ const Matches = ({ searchTerm }) => {
                           </a>
                         </th>
                         <td className='border px-2 py-2'>
-                          <a href={`https://google.com/search?q=${match.homeTeam.name} vs ${match.awayTeam.name} ${new Date(match.utcDate).toISOString().split('T')[0]}`} target='_blank' rel="noopener noreferrer" className='text-blue-500 underline'>View details</a>
+                          <a href={`https://google.com/search?q=${match.homeTeam.name} vs ${match.awayTeam.name} ${new Date(match.utcDate).toISOString().split('T')[0]}`} target='_blank' rel="noopener noreferrer" className='text-blue-500 underline text-center'>View details</a>
                         </td>
                       </tr>
                     ))}
